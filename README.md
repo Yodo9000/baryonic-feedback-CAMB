@@ -1,6 +1,8 @@
 The Jupyter Notebooks with the Python code for my bachelor's project in Astronomy.
 
-The analysis from [Baryonic feedback biases on fundamental physics from lensed CMB power spectra](https://arxiv.org/abs/2103.05582) is redone with MCMC instead of using the Fisher-Knox formula, but due to time constraints, this was done only for $l_\rm{max} = 5000$ (unlike $l_\rm{max} \in [10, 5000]$ in said paper) and the bias-mitigation strategies presented there could not be evaluated.
+The analysis from [Baryonic feedback biases on fundamental physics from lensed CMB power spectra](https://arxiv.org/abs/2103.05582) by McCarthy et al is redone with MCMC instead of using the Fisher-Knox formula, but due to time constraints, this was done only for $l_\rm{max} = 5000$ (unlike $l_\rm{max} \in [10, 5000]$ in said paper) and the bias-mitigation strategies presented there could not be evaluated. Some of the settings in CAMB were also lower than those recommended by McCarthy et al, see `code_main.ipynb` for more details.
+
+Baryonic models are taken from the [Power Spectrum Library](https://powerlib.strw.leidenuniv.nl/), and combined with the power spectra from CAMB for large comoving distances $\chi$.
 
 Description of files:
 - `code_main.ipynb` has the code to setup and run the simulations using [CAMB](https://github.com/cmbant/CAMB) and [Emcee](https://github.com/dfm/emcee/)
