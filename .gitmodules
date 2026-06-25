@@ -1,0 +1,3 @@
+[submodule "bulk_data/so_noise_models"]
+	path = bulk_data/so_noise_models
+	url = https://github.com/simonsobs/so_noise_models/
